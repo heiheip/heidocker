@@ -1,5 +1,5 @@
 # 使用官方的 NGINX 映像作为基础
-FROM public-cn-beijing.cr.volces.com/public/python:3.9.15
+FROM src-ssrf.bytedance.net/ssrf
 
 COPY ../../../../../../ /opt/application/
 RUN --mount=type=bind,source=/tmp,target=/tmp
